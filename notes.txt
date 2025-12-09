@@ -1,0 +1,16 @@
+
+#
+# python3 -m venv venv
+# source ./venv/bin/activate
+# python3 -m pip install xyz
+
+
+
+
+
+Create a Jarvis persona for each application where required. ie. 
+Re-instantiate Jarvis for the cooking section of the application.
+
+- Create Router folder
+- Create TTS folder
+- Create OpenAI folder

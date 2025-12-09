@@ -1,0 +1,69 @@
+{
+  "functions": [
+    {
+      "name": "control_lights",
+      "description": "Control the lights in the room",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "type": "boolean",
+            "description": "True to turn lights on, False to turn them off"
+          }
+        },
+        "required": ["state"]
+      }
+    },
+    {
+      "name": "web_search",
+      "description": "Search the web for real-time information",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The search query to look up"
+          }
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "spotify_control",
+      "description": "Control Spotify playback functions",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "The Spotify action to perform",
+            "enum": ["get_current_playing", "start_music", "stop_music", "skip_to_next", "skip_to_previous"]
+          }
+        },
+        "required": ["action"]
+      },
+      "returns": {
+        "type": "string",
+        "description": "Success message or error description"
+      }
+    },
+    {
+      "name": "toggle_silent_mode",
+      "description": "Toggle silent mode on or off",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "type": "boolean",
+            "description": "True to enable silent mode, False to disable it"
+          }
+        },
+        "required": ["state"]
+      },
+      "returns": {
+        "type": "string",
+        "description": "Confirmation message indicating the current silent mode status"
+      }
+    }
+  ]
+}

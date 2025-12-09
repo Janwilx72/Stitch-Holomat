@@ -1,0 +1,13 @@
+opencv-python
+numpy
+mediapipe
+pygame
+python-weather
+asyncio
+icrawler
+openai
+google
+sounddevice
+scipy
+python-dotenv
+RealtimeSTT
